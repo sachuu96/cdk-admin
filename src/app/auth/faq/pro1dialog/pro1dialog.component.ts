@@ -28,13 +28,14 @@ export class Pro1dialogComponent implements OnInit {
 
   }
   openDialog() {
-    const dialogRef = this.dialog.open(AddeddialogComponent, {
-      width: '600px',
-      data: 'This text is passed'
-    })
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog closed:${result}`);
-      this.dialogResult = result;
-    })
+      const dialogRef = this.dialog.open(AddeddialogComponent, {
+          width: '600px',
+          data: 'This text is passed'
+      });
+      dialogRef.afterClosed().subscribe(result => {
+          console.log(`Dialog closed:${result}`);
+          this.dialogResult = result;
+      });
 
+  }
 }

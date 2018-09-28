@@ -8,7 +8,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { 
         MatToolbarModule,
         MatListModule,
-        MatCardModule
+        MatCardModule,
+        MatFormFieldModule
     } from '@angular/material';
 export const ROUTES: Routes = [
    { path: '', component: ScrumboardComponent }, 
@@ -22,7 +23,8 @@ export const ROUTES: Routes = [
     MatToolbarModule,
     FlexLayoutModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule
   ],
   declarations: [ScrumboardComponent]
 })
